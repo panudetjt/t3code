@@ -42,3 +42,23 @@ node probe/p13.mjs <release-dir>              # resume carries no mode, preserve
 `probe/channel.mjs` is a from-scratch client for the daemon's binary channel protocol: a 13-byte frame header plus tagged/varint bodies, capability handshake over `POST /api/rpc-host-capability`.
 
 No script here sends a prompt or starts a turn, so none of them spend quota.
+
+## Captures
+
+The UI captures from both branches stay on the fork's release tag [`pr-evidence`](https://github.com/panudetjt/t3code/releases/tag/pr-evidence) rather than in this repository — ten PNGs and one MP4, about 6 MB. They are linked from Appendix D of the discussion.
+
+| capture | shows |
+| --- | --- |
+| `01-settings-providers-zcode.png` | route 1 provider page, "Authenticated · zcode", v0.17.1 |
+| `02-model-picker-zcode.png` | route 1 picker with the plan's GLM models |
+| `03-chat-glm-reply.png` | a GLM-5.3-Flash turn answering |
+| `zcode-serve-provider.png` | route 2 provider page, launch arguments now target `zcode serve` |
+| `zcode-serve-config.png` | add-provider wizard, Config step |
+| `zcode-serve-models.png` | picker fed by `model-selection.getView` |
+| `zcode-serve-turn.png` | streaming turn over the daemon channel |
+| `zcode-serve-interaction.png` | AskUserQuestion answered through `resolveInteraction` |
+| `zcode-serve-interrupt.png` | interrupt mid-turn |
+| `zcode-serve-resume.png` | resume after restart; the "Reasoning level is required" error is the pre-fix state |
+| `zcode-serve-walkthrough.mp4` | end-to-end walkthrough |
+
+Download base: `https://github.com/panudetjt/t3code/releases/download/pr-evidence/<name>`
