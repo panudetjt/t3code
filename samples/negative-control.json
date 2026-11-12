@@ -1,0 +1,107 @@
+{
+  "oauthGetActiveProvider": {
+    "type": 201,
+    "ms": 3,
+    "value": null
+  },
+  "modelSelectionGetView": {
+    "type": 201,
+    "ms": 2,
+    "value": {
+      "revision": 1,
+      "providers": [],
+      "effectiveSelection": null,
+      "selectionIssue": "selection-missing"
+    }
+  },
+  "providerSettingsGetView": {
+    "type": 201,
+    "ms": 3,
+    "bytes": 44434,
+    "providers": [
+      {
+        "providerId": "account:zai-individual-coding-plan",
+        "executable": false,
+        "accountState": {
+          "availability": "unavailable",
+          "entitled": false,
+          "unavailableReason": "not-connected",
+          "current": false,
+          "connectionKey": "redacted"
+        }
+      },
+      {
+        "providerId": "account:zai-team-coding-plan",
+        "executable": false,
+        "accountState": {
+          "availability": "unavailable",
+          "entitled": false,
+          "unavailableReason": "not-connected",
+          "current": false,
+          "connectionKey": "redacted"
+        }
+      },
+      {
+        "providerId": "account:zai-start-plan",
+        "executable": false,
+        "accountState": {
+          "availability": "unavailable",
+          "entitled": false,
+          "unavailableReason": "not-connected",
+          "current": false,
+          "connectionKey": "redacted"
+        }
+      },
+      {
+        "providerId": "account:bigmodel-individual-coding-plan",
+        "executable": false,
+        "accountState": {
+          "availability": "unavailable",
+          "entitled": false,
+          "unavailableReason": "not-connected",
+          "current": false,
+          "connectionKey": "redacted"
+        }
+      },
+      {
+        "providerId": "account:bigmodel-team-coding-plan",
+        "executable": false,
+        "accountState": {
+          "availability": "unavailable",
+          "entitled": false,
+          "unavailableReason": "not-connected",
+          "current": false,
+          "connectionKey": "redacted"
+        }
+      },
+      {
+        "providerId": "account:bigmodel-start-plan",
+        "executable": false,
+        "accountState": {
+          "availability": "unavailable",
+          "entitled": false,
+          "unavailableReason": "not-connected",
+          "current": false,
+          "connectionKey": "redacted"
+        }
+      }
+    ]
+  },
+  "usageStatsEntitlementSnapshot": {
+    "type": 201,
+    "ms": 1,
+    "value": {
+      "generatedAt": 1794467378999,
+      "authenticated": true,
+      "unavailableReason": "not_configured",
+      "context": {
+        "scope": "personal"
+      },
+      "provider": null,
+      "remaining": null,
+      "subscription": null,
+      "quota": null,
+      "mcpQuota": null
+    }
+  }
+}

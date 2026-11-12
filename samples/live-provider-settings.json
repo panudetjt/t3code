@@ -1,0 +1,2560 @@
+{
+  "revision": 1,
+  "providerTemplates": [
+    {
+      "templateId": "zai-api",
+      "templateNameMap": {
+        "zh-CN": "Z.ai Coding Plan",
+        "en-US": "Z.ai Coding Plan"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "zai"
+        },
+        "access": {
+          "type": "zhipu-coding-plan-api-key",
+          "apiKeyManagementUrl": "https://z.ai/manage-apikey/apikey-list"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.z.ai/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      }
+    },
+    {
+      "templateId": "zai-standard-api",
+      "templateNameMap": {
+        "zh-CN": "Z.ai API",
+        "en-US": "Z.ai API"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "zai"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://z.ai/manage-apikey/apikey-list"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://api.z.ai/api/paas/v4"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash",
+          "glm-5.3-flashx",
+          "GLM-5V-Turbo",
+          "GLM-5.1",
+          "GLM-5.1-Highspeed",
+          "GLM-5",
+          "GLM-5-Turbo",
+          "GLM-4.7",
+          "GLM-4.7-FlashX",
+          "GLM-4.7-Flash",
+          "GLM-4.6",
+          "GLM-4.5-Air",
+          "GLM-4.5",
+          "GLM-4.6V",
+          "GLM-4.6V-Flash",
+          "GLM-4.6V-FlashX",
+          "GLM-4.1V-Thinking-FlashX",
+          "GLM-4.1V-Thinking-Flash",
+          "GLM-4-FlashX-250414",
+          "GLM-4-Flash-250414",
+          "GLM-4V-Flash",
+          "codegeex-4",
+          "charglm-4",
+          "emohaa"
+        ]
+      }
+    },
+    {
+      "templateId": "bigmodel-api",
+      "templateNameMap": {
+        "zh-CN": "BigModel Coding Plan",
+        "en-US": "BigModel Coding Plan"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "bigmodel"
+        },
+        "access": {
+          "type": "zhipu-coding-plan-api-key",
+          "apiKeyManagementUrl": "https://bigmodel.cn/coding-plan/personal/overview"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://open.bigmodel.cn/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      }
+    },
+    {
+      "templateId": "bigmodel-standard-api",
+      "templateNameMap": {
+        "zh-CN": "BigModel API",
+        "en-US": "BigModel API"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "bigmodel"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://bigmodel.cn/usercenter/proj-mgmt/apikeys"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://open.bigmodel.cn/api/paas/v4"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash",
+          "GLM-5V-Turbo",
+          "GLM-5.1",
+          "GLM-5.1-Highspeed",
+          "GLM-5",
+          "GLM-5-Turbo",
+          "GLM-4.7",
+          "GLM-4.7-FlashX",
+          "GLM-4.7-Flash",
+          "GLM-4.6",
+          "GLM-4.5-Air",
+          "GLM-4.5",
+          "GLM-4.6V",
+          "GLM-4.6V-Flash",
+          "GLM-4.6V-FlashX",
+          "GLM-4.1V-Thinking-FlashX",
+          "GLM-4.1V-Thinking-Flash",
+          "GLM-4-FlashX-250414",
+          "GLM-4-Flash-250414",
+          "GLM-4V-Flash",
+          "codegeex-4",
+          "charglm-4",
+          "emohaa"
+        ]
+      }
+    },
+    {
+      "templateId": "moonshot-kimi",
+      "templateNameMap": {
+        "zh-CN": "Kimi",
+        "en-US": "Kimi"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "moonshot-kimi"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://platform.kimi.com/console/api-keys"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.moonshot.cn/anthropic"
+        },
+        "builtinModelIds": [
+          "kimi-k3.1-pro",
+          "kimi-k3.1-pro-highspeed",
+          "kimi-k3",
+          "kimi-k2.7-code",
+          "kimi-k2.6",
+          "kimi-k2.7-code-highspeed",
+          "k3",
+          "k3-256k"
+        ]
+      }
+    },
+    {
+      "templateId": "kimi-code-cn",
+      "templateNameMap": {
+        "zh-CN": "Kimi Code（国内）",
+        "en-US": "Kimi Code (China)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "moonshot-kimi"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://www.kimi.com/code/console"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://api.kimi.com/coding/v1"
+        },
+        "builtinModelIds": [
+          "k3.1-pro",
+          "k3.1-pro-highspeed",
+          "k3",
+          "k3-256k",
+          "kimi-for-coding",
+          "kimi-for-coding-highspeed"
+        ]
+      }
+    },
+    {
+      "templateId": "kimi-code-intl",
+      "templateNameMap": {
+        "zh-CN": "Kimi Code（国际）",
+        "en-US": "Kimi Code (International)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "moonshot-kimi"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://www.kimi.com/code/console"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://api.kimi.ai/coding/v1"
+        },
+        "builtinModelIds": [
+          "k3.1-pro",
+          "k3.1-pro-highspeed",
+          "k3",
+          "k3-256k",
+          "kimi-for-coding",
+          "kimi-for-coding-highspeed"
+        ]
+      }
+    },
+    {
+      "templateId": "minimax",
+      "templateNameMap": {
+        "zh-CN": "MiniMax",
+        "en-US": "MiniMax"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "minimax"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://platform.minimaxi.com/console/access?tab=api-keys"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.minimaxi.com/anthropic"
+        },
+        "builtinModelIds": [
+          "MiniMax-M3.1-Flash",
+          "MiniMax-M3",
+          "MiniMax-M2.7",
+          "MiniMax-M2.7-highspeed",
+          "MiniMax-M2.5",
+          "MiniMax-M2.5-highspeed"
+        ]
+      }
+    },
+    {
+      "templateId": "minimax-m-plan-cn",
+      "templateNameMap": {
+        "zh-CN": "MiniMax M Plan（中国）",
+        "en-US": "MiniMax M Plan (China)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "minimax"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://platform.minimax.cn/console/plan"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.minimax.cn/anthropic"
+        },
+        "builtinModelIds": [
+          "MiniMax-M3.1-Flash",
+          "MiniMax-M3.1-Flash-Preview"
+        ]
+      }
+    },
+    {
+      "templateId": "deepseek",
+      "templateNameMap": {
+        "zh-CN": "DeepSeek",
+        "en-US": "DeepSeek"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "deepseek"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://platform.deepseek.com/api_keys"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.deepseek.com/anthropic"
+        },
+        "builtinModelIds": [
+          "deepseek-flash",
+          "deepseek-v4-pro"
+        ]
+      }
+    },
+    {
+      "templateId": "qwen-alibaba-model-studio-cn",
+      "templateNameMap": {
+        "zh-CN": "阿里云百炼（中国）",
+        "en-US": "Alibaba Cloud (China)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "alibaba-model-studio"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://bailian.console.aliyun.com/cn-beijing?tab=model"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://dashscope.aliyuncs.com/apps/anthropic"
+        },
+        "builtinModelIds": [
+          "qwen3.8-max",
+          "qwen3.8-flash",
+          "qwen3.7-max",
+          "qwen3.7-plus",
+          "qwen3.7-flash",
+          "qwen3.6-plus",
+          "qwen3.6-flash",
+          "qwen3.5-plus",
+          "qwen3.5-flash",
+          "qwen3-max",
+          "qwen-plus",
+          "qwen-flash",
+          "qwen3-vl-plus"
+        ]
+      }
+    },
+    {
+      "templateId": "qwen-alibaba-model-studio-intl",
+      "templateNameMap": {
+        "zh-CN": "阿里云百炼（国际）",
+        "en-US": "Alibaba Cloud (Global)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "alibaba-model-studio"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://modelstudio.console.aliyun.com/ap-southeast-1?tab=dashboard"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
+        },
+        "builtinModelIds": [
+          "qwen3.8-max",
+          "qwen3.8-flash",
+          "qwen3.8-omni-flash",
+          "qwen3.7-max",
+          "qwen3.7-plus",
+          "qwen3.7-flash",
+          "qwen3.6-plus",
+          "qwen3.6-flash",
+          "qwen3.5-plus",
+          "qwen3.5-flash",
+          "qwen3-max",
+          "qwen-plus",
+          "qwen-flash",
+          "qwen3-vl-plus"
+        ]
+      }
+    },
+    {
+      "templateId": "qwen-coding-plan-cn",
+      "templateNameMap": {
+        "zh-CN": "阿里云百炼 Coding Plan（中国）",
+        "en-US": "Alibaba Coding Plan (China)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "alibaba-model-studio"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://bailian.console.aliyun.com/cn-beijing/?tab=coding-plan"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://coding.dashscope.aliyuncs.com/v1"
+        },
+        "builtinModelIds": [
+          "qwen3.7-plus"
+        ]
+      }
+    },
+    {
+      "templateId": "qwen-token-plan-team-cn",
+      "templateNameMap": {
+        "zh-CN": "阿里云百炼 Token Plan 团队版（中国）",
+        "en-US": "Alibaba Token Plan Team (China)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "alibaba-model-studio"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://bailian.console.aliyun.com/"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+        },
+        "builtinModelIds": [
+          "qwen3.8-max",
+          "qwen3.8-flash"
+        ]
+      }
+    },
+    {
+      "templateId": "xiaomi-mimo",
+      "templateNameMap": {
+        "zh-CN": "Xiaomi MiMo API",
+        "en-US": "Xiaomi MiMo API"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "xiaomi-mimo"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://platform.xiaomimimo.com/"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.xiaomimimo.com/anthropic"
+        },
+        "builtinModelIds": [
+          "mimo-v2.6-pro",
+          "mimo-v2.6-flash",
+          "mimo-v2.5-pro",
+          "mimo-v2.5"
+        ]
+      }
+    },
+    {
+      "templateId": "xiaomi-mimo-token-plan",
+      "templateNameMap": {
+        "zh-CN": "Xiaomi MiMo Token Plan",
+        "en-US": "Xiaomi MiMo Token Plan"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "xiaomi-mimo"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://platform.xiaomimimo.com/"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://token-plan-cn.xiaomimimo.com/anthropic"
+        },
+        "builtinModelIds": [
+          "mimo-v2.6-pro",
+          "mimo-v2.6-flash"
+        ]
+      }
+    },
+    {
+      "templateId": "tencent-tokenhub-cn",
+      "templateNameMap": {
+        "zh-CN": "腾讯 TokenHub 广州 API（中国站）",
+        "en-US": "Tencent TokenHub Guangzhou API (China account)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "tencent-cloud"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://console.cloud.tencent.com/tokenhub"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://tokenhub.tencentmaas.com/v1"
+        },
+        "builtinModelIds": [
+          "hy3",
+          "hy4-preview"
+        ]
+      }
+    },
+    {
+      "templateId": "tencent-tokenhub-intl",
+      "templateNameMap": {
+        "zh-CN": "腾讯 TokenHub 新加坡 API（中国站）",
+        "en-US": "Tencent TokenHub Singapore API (China account)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "tencent-cloud"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://console.cloud.tencent.com/tokenhub"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://tokenhub-intl.tencentmaas.com/v1"
+        },
+        "builtinModelIds": [
+          "hy3",
+          "hy4-preview"
+        ]
+      }
+    },
+    {
+      "templateId": "volcengine-ark",
+      "templateNameMap": {
+        "zh-CN": "火山方舟 API",
+        "en-US": "Volcano Ark API"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "volcengine"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://ark.volcengine.com/region:cn-beijing/apikey"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://ark.cn-beijing.volces.com/api/compatible"
+        },
+        "builtinModelIds": [
+          "doubao-seed-evolving",
+          "doubao-seed-2-1-pro-260915",
+          "doubao-seed-2-1-lite-260915",
+          "doubao-seed-2-1-turbo-260628"
+        ]
+      }
+    },
+    {
+      "templateId": "volcengine-coding-plan",
+      "templateNameMap": {
+        "zh-CN": "火山方舟 Coding Plan",
+        "en-US": "Volcano Ark Coding Plan"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "volcengine"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://ark.volcengine.com/region:cn-beijing"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://ark.cn-beijing.volces.com/api/coding"
+        },
+        "builtinModelIds": [
+          "doubao-seed-2.1-pro",
+          "doubao-seed-2.1-lite"
+        ]
+      }
+    },
+    {
+      "templateId": "volcengine-agent-plan",
+      "templateNameMap": {
+        "zh-CN": "火山方舟 Agent Plan",
+        "en-US": "Volcano Ark Agent Plan"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "volcengine"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://ark.volcengine.com/region:cn-beijing"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://ark.cn-beijing.volces.com/api/plan"
+        },
+        "builtinModelIds": [
+          "doubao-seed-2.1-pro",
+          "doubao-seed-2.1-lite"
+        ]
+      }
+    },
+    {
+      "templateId": "stepfun",
+      "templateNameMap": {
+        "zh-CN": "阶跃星辰 API",
+        "en-US": "StepFun API"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "stepfun"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://platform.stepfun.com/interface-key"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.stepfun.com"
+        },
+        "builtinModelIds": [
+          "step-5-preview",
+          "step-3.7-flash"
+        ]
+      }
+    },
+    {
+      "templateId": "stepfun-step-plan",
+      "templateNameMap": {
+        "zh-CN": "阶跃星辰 Step Plan",
+        "en-US": "StepFun Step Plan"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "stepfun"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://platform.stepfun.com/interface-key"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.stepfun.com/step_plan"
+        },
+        "builtinModelIds": [
+          "step-5-preview",
+          "step-3.7-flash"
+        ]
+      }
+    },
+    {
+      "templateId": "openai",
+      "templateNameMap": {
+        "zh-CN": "OpenAI",
+        "en-US": "OpenAI"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "openai"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://platform.openai.com/api-keys"
+        },
+        "api": {
+          "type": "openai-responses",
+          "baseUrl": "https://api.openai.com/v1"
+        },
+        "builtinModelIds": [
+          "gpt-6-astra",
+          "gpt-5.6-terra",
+          "gpt-6.1-sol",
+          "gpt-6-luna",
+          "gpt-5.6-sol",
+          "gpt-5.6-luna",
+          "gpt-5.6",
+          "gpt-5.4",
+          "gpt-5.4-pro",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-5.3-codex"
+        ]
+      }
+    },
+    {
+      "templateId": "anthropic",
+      "templateNameMap": {
+        "zh-CN": "Anthropic",
+        "en-US": "Anthropic"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "anthropic"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://console.anthropic.com/settings/keys"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.anthropic.com/v1"
+        },
+        "builtinModelIds": [
+          "claude-fable-5-1",
+          "claude-opus-5-5",
+          "claude-sonnet-5-5",
+          "claude-haiku-5-5",
+          "claude-fable-5",
+          "claude-opus-5",
+          "claude-sonnet-5",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    {
+      "templateId": "xai",
+      "templateNameMap": {
+        "zh-CN": "xAI",
+        "en-US": "xAI"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "xai"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://console.x.ai"
+        },
+        "api": {
+          "type": "openai-responses",
+          "baseUrl": "https://api.x.ai/v1"
+        },
+        "builtinModelIds": [
+          "grok-build-0.1",
+          "grok-4.7",
+          "grok-4.6",
+          "grok-4.3"
+        ]
+      }
+    },
+    {
+      "templateId": "siliconflow-cn",
+      "templateNameMap": {
+        "zh-CN": "硅基流动 API（中国）",
+        "en-US": "SiliconFlow API (China)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "siliconflow"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://cloud.siliconflow.cn/account/ak"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://api.siliconflow.cn/v1"
+        },
+        "builtinModelIds": [
+          "zai-org/GLM-5.3",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "moonshotai/Kimi-K2.7-Code"
+        ]
+      }
+    },
+    {
+      "templateId": "openrouter",
+      "templateNameMap": {
+        "zh-CN": "OpenRouter",
+        "en-US": "OpenRouter"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "openrouter"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://openrouter.ai/keys"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://openrouter.ai/api"
+        },
+        "builtinModelIds": [
+          "minimax/minimax-m3.1-flash",
+          "moonshotai/kimi-k3.1-pro",
+          "anthropic/claude-fable-5.1",
+          "openai/gpt-6-astra",
+          "deepseek/deepseek-v4-pro",
+          "moonshotai/kimi-k3",
+          "z-ai/glm-5.3",
+          "qwen/qwen3.8-max",
+          "minimax/minimax-m3",
+          "openai/gpt-6.1-sol",
+          "openai/gpt-6-luna",
+          "anthropic/claude-opus-5.5",
+          "anthropic/claude-sonnet-5.5",
+          "anthropic/claude-haiku-5.5",
+          "x-ai/grok-4.7",
+          "z-ai/glm-5.3-flashx",
+          "xiaomi/mimo-v2.6-pro",
+          "xiaomi/mimo-v2.6-flash",
+          "openai/gpt-5.6-sol",
+          "anthropic/claude-opus-5",
+          "xiaomi/mimo-v2.5-pro",
+          "x-ai/grok-4.6",
+          "deepseek/deepseek-v4.1-flash",
+          "qwen/qwen3.8-max-0902",
+          "openai/gpt-5.6-terra",
+          "openai/gpt-5.6-luna",
+          "openai/gpt-5.6",
+          "openai/gpt-5.4",
+          "openai/gpt-5.4-pro",
+          "openai/gpt-5.4-mini",
+          "openai/gpt-5.4-nano",
+          "openai/gpt-5.3-codex",
+          "anthropic/claude-sonnet-5",
+          "anthropic/claude-haiku-4.5",
+          "anthropic/claude-opus-4.8",
+          "anthropic/claude-opus-4.7",
+          "anthropic/claude-opus-4.6",
+          "anthropic/claude-opus-4.5",
+          "anthropic/claude-sonnet-4.6",
+          "anthropic/claude-sonnet-4.5",
+          "deepseek/deepseek-v4-flash",
+          "moonshotai/kimi-k2.7-code",
+          "moonshotai/kimi-k2.6",
+          "moonshotai/kimi-k2.5",
+          "z-ai/glm-5.3-flash",
+          "z-ai/glm-5.2",
+          "z-ai/glm-5.1",
+          "z-ai/glm-5v-turbo",
+          "z-ai/glm-5",
+          "z-ai/glm-5-turbo",
+          "z-ai/glm-4.7",
+          "z-ai/glm-4.7-flash",
+          "z-ai/glm-4.6",
+          "z-ai/glm-4.6v",
+          "z-ai/glm-4.5-air",
+          "z-ai/glm-4.5",
+          "qwen/qwen3.8-flash",
+          "qwen/qwen3.7-max",
+          "qwen/qwen3.7-plus",
+          "qwen/qwen3.7-flash",
+          "qwen/qwen3.6-plus",
+          "qwen/qwen3.6-flash",
+          "qwen/qwen3.5-plus-20260420",
+          "qwen/qwen3-vl-plus",
+          "qwen/qwen3-vl-flash",
+          "minimax/minimax-m2.7",
+          "minimax/minimax-m2.5",
+          "xiaomi/mimo-v2.5",
+          "x-ai/grok-build-0.1",
+          "x-ai/grok-4.3"
+        ]
+      }
+    },
+    {
+      "templateId": "opencode-go-responses",
+      "templateNameMap": {
+        "zh-CN": "OpenCode Go (Responses)",
+        "en-US": "OpenCode Go (Responses)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "opencode"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://opencode.ai/auth"
+        },
+        "api": {
+          "type": "openai-responses",
+          "baseUrl": "https://opencode.ai/zen/go/v1"
+        },
+        "builtinModelIds": [
+          "gpt-6-luna",
+          "grok-4.7",
+          "gpt-5.6-luna",
+          "grok-4.6"
+        ]
+      }
+    },
+    {
+      "templateId": "opencode-go-messages",
+      "templateNameMap": {
+        "zh-CN": "OpenCode Go (Anthropic)",
+        "en-US": "OpenCode Go (Anthropic)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "opencode"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://opencode.ai/auth"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://opencode.ai/zen/go/v1"
+        },
+        "builtinModelIds": [
+          "minimax-m3",
+          "qwen3.8-max",
+          "qwen3.8-flash",
+          "claude-haiku-5-5",
+          "minimax-m2.7",
+          "minimax-m2.5",
+          "qwen3.7-max",
+          "qwen3.7-plus",
+          "qwen3.6-plus"
+        ]
+      }
+    },
+    {
+      "templateId": "opencode-go-chat",
+      "templateNameMap": {
+        "zh-CN": "OpenCode Go (Chat)",
+        "en-US": "OpenCode Go (Chat)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "opencode"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://opencode.ai/auth"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://opencode.ai/zen/go/v1"
+        },
+        "builtinModelIds": [
+          "minimax-m3.1-flash",
+          "kimi-k3.1-pro",
+          "glm-5.3-flash",
+          "glm-5.3",
+          "kimi-k3",
+          "kimi-k2.7-code",
+          "deepseek-v4.1-flash",
+          "deepseek-v4-pro",
+          "mimo-v2.6-pro",
+          "mimo-v2.6-flash",
+          "mimo-v2.5",
+          "mimo-v2.5-pro",
+          "glm-5.2",
+          "glm-5.1",
+          "kimi-k2.6",
+          "deepseek-v4-flash",
+          "deepseek-v4-flash-vision-exp",
+          "hy4-preview",
+          "hy3"
+        ]
+      }
+    },
+    {
+      "templateId": "opencode-zen-responses",
+      "templateNameMap": {
+        "zh-CN": "OpenCode Zen (Responses)",
+        "en-US": "OpenCode Zen (Responses)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "opencode"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://opencode.ai/auth"
+        },
+        "api": {
+          "type": "openai-responses",
+          "baseUrl": "https://opencode.ai/zen/v1"
+        },
+        "builtinModelIds": [
+          "gpt-6-astra",
+          "gpt-6.1-sol",
+          "gpt-6-luna",
+          "grok-4.7",
+          "gpt-5.6-sol",
+          "gpt-5.6-terra",
+          "gpt-5.6-luna",
+          "gpt-5.5",
+          "gpt-5.5-pro",
+          "gpt-5.4",
+          "gpt-5.4-pro",
+          "gpt-5.4-mini",
+          "gpt-5.4-nano",
+          "gpt-5.3-codex",
+          "gpt-5.3-codex-spark",
+          "gpt-5.2",
+          "gpt-5.1"
+        ]
+      }
+    },
+    {
+      "templateId": "opencode-zen-messages",
+      "templateNameMap": {
+        "zh-CN": "OpenCode Zen (Anthropic)",
+        "en-US": "OpenCode Zen (Anthropic)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "opencode"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://opencode.ai/auth"
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://opencode.ai/zen/v1"
+        },
+        "builtinModelIds": [
+          "claude-fable-5-1",
+          "qwen3.7-max",
+          "qwen3.6-plus",
+          "qwen3.5-plus",
+          "claude-opus-5-5",
+          "claude-sonnet-5-5",
+          "claude-haiku-5-5",
+          "claude-fable-5",
+          "claude-opus-5",
+          "claude-sonnet-5",
+          "claude-haiku-4-5",
+          "claude-opus-4-8",
+          "claude-opus-4-7",
+          "claude-opus-4-6",
+          "claude-opus-4-5",
+          "claude-sonnet-4-6",
+          "claude-sonnet-4-5",
+          "qwen3.7-plus"
+        ]
+      }
+    },
+    {
+      "templateId": "opencode-zen-chat",
+      "templateNameMap": {
+        "zh-CN": "OpenCode Zen (Chat)",
+        "en-US": "OpenCode Zen (Chat)"
+      },
+      "config": {
+        "logo": {
+          "type": "builtin",
+          "key": "opencode"
+        },
+        "access": {
+          "type": "api-key",
+          "apiKeyManagementUrl": "https://opencode.ai/auth"
+        },
+        "api": {
+          "type": "openai-chat-completions",
+          "baseUrl": "https://opencode.ai/zen/v1"
+        },
+        "builtinModelIds": [
+          "kimi-k3",
+          "minimax-m3",
+          "deepseek-v4-pro",
+          "glm-5.2",
+          "big-pickle",
+          "mimo-v2.5-free",
+          "hy3-free",
+          "ling-3.0-flash-fin-free",
+          "nemotron-3-ultra-free",
+          "muse-spark-1.2-contributor-free",
+          "mimo-v2.6-flash-free",
+          "minimax-m2.7",
+          "deepseek-v4-flash",
+          "glm-5.1",
+          "nemotron-3.5-lightning-free"
+        ]
+      }
+    }
+  ],
+  "providerOrder": [],
+  "providers": [
+    {
+      "providerId": "account:zai-individual-coding-plan",
+      "providerName": "Z.AI Individual Coding Plan",
+      "enabled": true,
+      "accountState": {
+        "availability": "available",
+        "entitled": true,
+        "current": true,
+        "connectionKey": "redacted"
+      },
+      "executable": true,
+      "effectiveBuiltinConfig": {
+        "group": "zai-family",
+        "logo": {
+          "type": "builtin",
+          "key": "zai"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "zai",
+          "mode": "individual-coding-plan",
+          "entitled": true
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.z.ai/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      },
+      "effectiveConfig": {
+        "group": "zai-family",
+        "logo": {
+          "type": "builtin",
+          "key": "zai"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "zai",
+          "mode": "individual-coding-plan",
+          "entitled": true
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.z.ai/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      },
+      "issues": [],
+      "models": [
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": false,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": false,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": true,
+          "selectable": true,
+          "issues": []
+        },
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3-Flash",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": true,
+          "selectable": true,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "providerId": "account:zai-team-coding-plan",
+      "providerName": "Z.AI Team Coding Plan",
+      "enabled": true,
+      "accountState": {
+        "availability": "unknown",
+        "entitled": false,
+        "current": false,
+        "connectionKey": "redacted"
+      },
+      "executable": false,
+      "effectiveBuiltinConfig": {
+        "group": "zai-family",
+        "logo": {
+          "type": "builtin",
+          "key": "zai"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "zai",
+          "mode": "team-coding-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.z.ai/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      },
+      "effectiveConfig": {
+        "group": "zai-family",
+        "logo": {
+          "type": "builtin",
+          "key": "zai"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "zai",
+          "mode": "team-coding-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://api.z.ai/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      },
+      "issues": [],
+      "models": [
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": false,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": false,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        },
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3-Flash",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "providerId": "account:zai-start-plan",
+      "providerName": "Start Plan",
+      "enabled": true,
+      "accountState": {
+        "availability": "unavailable",
+        "entitled": false,
+        "unavailableReason": "not-entitled",
+        "current": true,
+        "connectionKey": "redacted"
+      },
+      "executable": false,
+      "effectiveBuiltinConfig": {
+        "group": "zai-family",
+        "logo": {
+          "type": "builtin",
+          "key": "start-plan"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "zai",
+          "mode": "start-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://zcode.z.ai/api/v1/zcode-plan/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3-Flash",
+          "GLM-5.2",
+          "GLM-5-Turbo"
+        ]
+      },
+      "effectiveConfig": {
+        "group": "zai-family",
+        "logo": {
+          "type": "builtin",
+          "key": "start-plan"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "zai",
+          "mode": "start-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://zcode.z.ai/api/v1/zcode-plan/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3-Flash",
+          "GLM-5.2",
+          "GLM-5-Turbo"
+        ]
+      },
+      "issues": [],
+      "models": [
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3-Flash",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "personalExactConfig": {
+            "enabled": true
+          },
+          "useRecommendedConfig": true,
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        },
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.2",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "disabled",
+                  "high",
+                  "max"
+                ],
+                "map": "reasoningLevel == \"disabled\"\n  ? {\n      \"thinking\": {\n        \"type\": \"disabled\"\n      }\n    }\n  : {\n      \"thinking\": {\n        \"type\": \"enabled\"\n      },\n      \"output_config\": {\n        \"effort\": reasoningLevel\n      }\n    }"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "disabled",
+                  "high",
+                  "max"
+                ],
+                "map": "reasoningLevel == \"disabled\"\n  ? {\n      \"thinking\": {\n        \"type\": \"disabled\"\n      }\n    }\n  : {\n      \"thinking\": {\n        \"type\": \"enabled\"\n      },\n      \"output_config\": {\n        \"effort\": reasoningLevel\n      }\n    }"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        },
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5-Turbo",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 200000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "disabled",
+                  "enabled"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": reasoningLevel == \"enabled\" ? \"enabled\" : \"disabled\"\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 64000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 200000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "disabled",
+                  "enabled"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": reasoningLevel == \"enabled\" ? \"enabled\" : \"disabled\"\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 64000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "providerId": "account:bigmodel-individual-coding-plan",
+      "providerName": "BigModel Individual Coding Plan",
+      "enabled": true,
+      "accountState": {
+        "availability": "unavailable",
+        "entitled": false,
+        "unavailableReason": "not-connected",
+        "current": false,
+        "connectionKey": "redacted"
+      },
+      "executable": false,
+      "effectiveBuiltinConfig": {
+        "group": "bigmodel-family",
+        "logo": {
+          "type": "builtin",
+          "key": "bigmodel"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "bigmodel",
+          "mode": "individual-coding-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://open.bigmodel.cn/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      },
+      "effectiveConfig": {
+        "group": "bigmodel-family",
+        "logo": {
+          "type": "builtin",
+          "key": "bigmodel"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "bigmodel",
+          "mode": "individual-coding-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://open.bigmodel.cn/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      },
+      "issues": [],
+      "models": [
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": false,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": false,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        },
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3-Flash",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "providerId": "account:bigmodel-team-coding-plan",
+      "providerName": "BigModel Team Coding Plan",
+      "enabled": true,
+      "accountState": {
+        "availability": "unavailable",
+        "entitled": false,
+        "unavailableReason": "not-connected",
+        "current": false,
+        "connectionKey": "redacted"
+      },
+      "executable": false,
+      "effectiveBuiltinConfig": {
+        "group": "bigmodel-family",
+        "logo": {
+          "type": "builtin",
+          "key": "bigmodel"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "bigmodel",
+          "mode": "team-coding-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://open.bigmodel.cn/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      },
+      "effectiveConfig": {
+        "group": "bigmodel-family",
+        "logo": {
+          "type": "builtin",
+          "key": "bigmodel"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "bigmodel",
+          "mode": "team-coding-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://open.bigmodel.cn/api/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3",
+          "GLM-5.3-Flash"
+        ]
+      },
+      "issues": [],
+      "models": [
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": false,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": false,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        },
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3-Flash",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "providerId": "account:bigmodel-start-plan",
+      "providerName": "Start Plan",
+      "enabled": true,
+      "accountState": {
+        "availability": "unavailable",
+        "entitled": false,
+        "unavailableReason": "not-connected",
+        "current": false,
+        "connectionKey": "redacted"
+      },
+      "executable": false,
+      "effectiveBuiltinConfig": {
+        "group": "bigmodel-family",
+        "logo": {
+          "type": "builtin",
+          "key": "start-plan"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "bigmodel",
+          "mode": "start-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://zcode.z.ai/api/v1/zcode-plan/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3-Flash",
+          "GLM-5.2",
+          "GLM-5-Turbo"
+        ]
+      },
+      "effectiveConfig": {
+        "group": "bigmodel-family",
+        "logo": {
+          "type": "builtin",
+          "key": "start-plan"
+        },
+        "access": {
+          "type": "zhipu-account",
+          "accountType": "bigmodel",
+          "mode": "start-plan",
+          "entitled": false
+        },
+        "api": {
+          "type": "anthropic-messages",
+          "baseUrl": "https://zcode.z.ai/api/v1/zcode-plan/anthropic"
+        },
+        "builtinModelIds": [
+          "GLM-5.3-Flash",
+          "GLM-5.2",
+          "GLM-5-Turbo"
+        ]
+      },
+      "issues": [],
+      "models": [
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.3-Flash",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": true
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "low",
+                  "high",
+                  "max"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        },
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5.2",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "disabled",
+                  "high",
+                  "max"
+                ],
+                "map": "reasoningLevel == \"disabled\"\n  ? {\n      \"thinking\": {\n        \"type\": \"disabled\"\n      }\n    }\n  : {\n      \"thinking\": {\n        \"type\": \"enabled\"\n      },\n      \"output_config\": {\n        \"effort\": reasoningLevel\n      }\n    }"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 1000000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "disabled",
+                  "high",
+                  "max"
+                ],
+                "map": "reasoningLevel == \"disabled\"\n  ? {\n      \"thinking\": {\n        \"type\": \"disabled\"\n      }\n    }\n  : {\n      \"thinking\": {\n        \"type\": \"enabled\"\n      },\n      \"output_config\": {\n        \"effort\": reasoningLevel\n      }\n    }"
+              },
+              "maxOutputTokens": {
+                "max": 128000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        },
+        {
+          "kind": "candidate",
+          "modelId": "GLM-5-Turbo",
+          "builtin": true,
+          "effectiveBuiltinConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 200000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "disabled",
+                  "enabled"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": reasoningLevel == \"enabled\" ? \"enabled\" : \"disabled\"\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 64000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "effectiveConfig": {
+            "enabled": true,
+            "properties": {
+              "requiresMfjsToolSchema": false,
+              "contextWindow": 200000,
+              "inputFormat": {
+                "supportsText": true,
+                "supportsImage": true,
+                "supportsVideo": true,
+                "supportsAudio": false,
+                "supportsPdf": false
+              },
+              "outputFormat": {
+                "supportsText": true
+              },
+              "supportsToolCall": true,
+              "supportsJsonSchemaOutput": false,
+              "supportsNativeWebSearch": true,
+              "supportsMidConversationSystem": true
+            },
+            "optionSpecs": {
+              "reasoningLevel": {
+                "values": [
+                  "disabled",
+                  "enabled"
+                ],
+                "map": "{\n  \"thinking\": {\n    \"type\": reasoningLevel == \"enabled\" ? \"enabled\" : \"disabled\"\n  }\n}"
+              },
+              "maxOutputTokens": {
+                "max": 64000,
+                "map": "{'max_tokens': maxOutputTokens}"
+              }
+            }
+          },
+          "enabled": true,
+          "executable": false,
+          "selectable": false,
+          "issues": []
+        }
+      ]
+    }
+  ]
+}

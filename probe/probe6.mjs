@@ -1,0 +1,21 @@
+import { startCli } from "./runcli.mjs";
+const releaseDir = process.argv[2];
+const ws = "/tmp/opencode/zprobe/ws";
+const a = await startCli(releaseDir);
+const created = await a.call("session/create", { workspace: { workspacePath: ws, workspaceKey: ws }, mode: "guarded", titleGenerationEnabled: false, persistence: "immediate" });
+const sessionId = created?.result?.session?.sessionId;
+console.log("1) create guarded -> sessionId:", sessionId, "mode:", created?.result?.settings?.mode?.current, "| session.mode:", created?.result?.session?.mode);
+a.child.kill();
+await new Promise((r) => setTimeout(r, 1500));
+
+const b = await startCli(releaseDir);
+const resumed = await b.call("session/resume", { sessionId, workspace: { workspacePath: ws, workspaceKey: ws } });
+console.log("2) resume (after restart) ->", JSON.stringify(resumed.error ?? { sessionId: resumed?.result?.session?.sessionId, mode: resumed?.result?.settings?.mode?.current, sessionMode: resumed?.result?.session?.mode }));
+const withMode = await b.call("session/resume", { sessionId, workspace: { workspacePath: ws, workspaceKey: ws }, mode: "yolo" });
+console.log("3) resume WITH mode param ->", JSON.stringify(withMode.error?.message ?? "accepted"));
+const set = await b.call("session/setMode", { sessionId, mode: "yolo" });
+console.log("4) setMode yolo ->", JSON.stringify(set.error ?? { mode: set?.result?.settings?.mode?.current }));
+const read = await b.call("session/read", { sessionId });
+console.log("5) read -> settings.mode:", JSON.stringify(read?.result?.settings?.mode), "session.mode:", read?.result?.session?.mode);
+b.child.kill();
+process.exit(0);

@@ -1,0 +1,10 @@
+import { connect } from "./channel.mjs";
+import { writeFileSync } from "node:fs";
+const c = await connect();
+const r = await c.call("provider-settings", "getView", undefined, 20000);
+writeFileSync("/tmp/opencode/zprobe/provider-settings-view.json", JSON.stringify(r.values?.[0], null, 2));
+console.log("type", r.type, "bytes", JSON.stringify(r.values?.[0] ?? r).length);
+if (r.type !== 201) console.log(JSON.stringify(r).slice(0, 800));
+else console.log(JSON.stringify(r.values[0], null, 1).slice(0, 2500));
+c.close();
+process.exit(0);

@@ -1,0 +1,16 @@
+import { startCli } from "./runcli.mjs";
+const releaseDir = process.argv[2];
+const ws = "/tmp/opencode/zprobe/ws";
+const a = await startCli(releaseDir);
+const created = await a.call("session/create", { workspace: { workspacePath: ws, workspaceKey: ws }, mode: "guarded", titleGenerationEnabled: false });
+const sessionId = created?.result?.session?.sessionId;
+console.log("create guarded ->", sessionId, "settings.mode:", created?.result?.settings?.mode?.current);
+console.log("close ->", JSON.stringify((await a.call("session/close", { sessionId }))?.error ?? "ok"));
+const resumed = await a.call("session/resume", { sessionId, workspace: { workspacePath: ws, workspaceKey: ws } });
+console.log("resume ->", JSON.stringify(resumed?.error ?? { mode: resumed?.result?.settings?.mode?.current }));
+const set = await a.call("session/setMode", { sessionId, mode: "yolo" });
+console.log("setMode yolo ->", JSON.stringify(set?.error ?? { mode: set?.result?.settings?.mode?.current }));
+const read = await a.call("session/read", { sessionId });
+console.log("read -> settings.mode:", JSON.stringify(read?.result?.settings?.mode), "session.mode:", read?.result?.session?.mode);
+a.child.kill();
+process.exit(0);

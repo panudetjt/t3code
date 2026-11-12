@@ -1,0 +1,68 @@
+diff --git a/packages/provider-zcode/src/server/zcodeRequestAuth.ts b/packages/provider-zcode/src/server/zcodeRequestAuth.ts
+index d54975e429..d71151b5ab 100644
+--- a/packages/provider-zcode/src/server/zcodeRequestAuth.ts
++++ b/packages/provider-zcode/src/server/zcodeRequestAuth.ts
+@@ -11,6 +11,7 @@ import * as NodePath from "node:path";
+ import { causeErrorTag } from "@t3tools/shared/observability";
+ import * as HostProcess from "@t3tools/shared/HostProcess";
+ import * as DateTime from "effect/DateTime";
++import * as Deferred from "effect/Deferred";
+ import * as Effect from "effect/Effect";
+ import * as FileSystem from "effect/FileSystem";
+ import * as HttpClient from "effect/http/HttpClient";
+@@ -575,6 +576,28 @@ export const makeZcodeRequestAuth = (options: ZcodeRequestAuthOptions): ZcodeReq
+     return cachedToken;
+   });
+ 
++  /** One mint per family and login; concurrent cold answers wait on the same exchange. */
++  const inFlightMints = new Map<
++    string,
++    Deferred.Deferred<CachedProjectToken, ZcodeRequestAuthError>
++  >();
++
++  const mintShared = (
++    family: string,
++    key: string | undefined,
++  ): Effect.Effect<CachedProjectToken, ZcodeRequestAuthError> =>
++    Effect.gen(function* () {
++      if (key === undefined) return yield* mint(family);
++      const running = inFlightMints.get(key);
++      if (running !== undefined) return yield* Deferred.await(running);
++      const deferred = yield* Deferred.make<CachedProjectToken, ZcodeRequestAuthError>();
++      inFlightMints.set(key, deferred);
++      const outcome = yield* Effect.exit(mint(family));
++      yield* Deferred.done(deferred, outcome);
++      inFlightMints.delete(key);
++      return yield* outcome;
++    });
++
+   const answer = Effect.fn("ZcodeRequestAuth.answer")(function* (input: {
+     readonly family: string;
+     readonly rejectedProjectTokenFingerprint?: string;
+@@ -582,8 +605,8 @@ export const makeZcodeRequestAuth = (options: ZcodeRequestAuthOptions): ZcodeReq
+     const hit = cache.get(input.family);
+     // A CLI login can swap accounts or log out under the same family; the cached scope digests
+     // the credentials, so reread them and drop the hit when they no longer match.
+-    const currentScope =
+-      hit === undefined ? undefined : (yield* currentLogin(input.family))?.accountScope;
++    const login = yield* currentLogin(input.family);
++    const currentScope = hit === undefined ? undefined : login?.accountScope;
+     const cached =
+       hit !== undefined &&
+       currentScope === hit.accountScope &&
+@@ -602,7 +625,14 @@ export const makeZcodeRequestAuth = (options: ZcodeRequestAuthOptions): ZcodeReq
+         },
+       };
+     }
+-    const minted = yield* Effect.result(mint(input.family));
++    const minted = yield* Effect.result(
++      mintShared(
++        input.family,
++        login === undefined || input.rejectedProjectTokenFingerprint !== undefined
++          ? undefined
++          : `${input.family}:${login.accountScope}`,
++      ),
++    );
+     return Result.isFailure(minted)
+       ? { headersApplied: false, errorMessage: minted.failure.message }
+       : {
